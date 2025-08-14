@@ -27,8 +27,6 @@ import pandas as pd
 import json
 import akshare as ak
 
-app = FastAPI()
-
 # 参数配置
 params = {
     'ma_periods': {'short': 5, 'medium': 20, 'long': 60},
