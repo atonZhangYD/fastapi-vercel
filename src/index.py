@@ -44,7 +44,7 @@ def verify_auth_token(authorization: str = Header(None)):
     scheme, _, token = authorization.partition(" ")
     if scheme.lower() != "bearer":
         raise HTTPException(status_code=401, detail="Invalid Authorization Scheme")
-    valid_tokens = ["your-api-key"]  # 替换为实际API密钥
+    valid_tokens = ["34550B74-014C-54F2-8421-B20D5148B9A4"]  # 替换为实际API密钥
     if token not in valid_tokens:
         raise HTTPException(status_code=403, detail="Invalid or Expired Token")
     return token
