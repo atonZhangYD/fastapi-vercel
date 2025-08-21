@@ -4,8 +4,9 @@ pytest-asyncio==0.20.3
 uvicorn==0.32.0
 pydantic~=1.10.22
 
-pandas
+pandas~=2.3.1
 akshare==1.17.1
 numpy
 aiohttp<4.0.0
 yarl<2.0.0
+requests~=2.32.4
